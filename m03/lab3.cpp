@@ -15,9 +15,15 @@ int main()
     cout << "Now enter your GPA: ";
     cin >> gpa;
     
-    if (gpa >= 2.0 && year == '4')
-    cout << "It is time to graduate soon" << endl;
-    else if (year != '4'|| gpa <2.0)
-    cout << "You need more schooling" << endl;
+    // if (gpa >= 2.0 && year == '4')
+    // if( 2.0 <= gpa && year == '4')
+    // if( !(gpa < 2.0) && year == '4' )
+    if( !(gpa < 2.0) && year == '4' )
+        cout << "It is time to graduate soon" << endl;
+    // else if ( gpa <2.0 || year != '4' )
+    else if ( gpa <2.0 || year <= 3 )
+        cout << "You need more schooling" << endl;
+    else
+        cout << "gpa <2.0 || year <= " << int(year);
     return 0;
 }
