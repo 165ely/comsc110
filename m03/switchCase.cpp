@@ -12,8 +12,10 @@ int main() {
         
         switch(c) {
             case 'a': case 'b': case 'c':
+            { // explicit block
                 cout << "Entered character " << c << endl;
-                break;
+                break; // continue;
+            }
             default:
                 cout << c << " is not a valid choice.\n";
             
