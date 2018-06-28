@@ -12,8 +12,8 @@ int main()
     cout << "Number Number Squared\n";
     cout << "-------------------------\n";
     
-    for (num = MIN_NUMBER; num <= MAX_NUMBER; num++)
-    cout << num << "\t\t" << (num * num) << endl;
+    // for (num = MIN_NUMBER; num <= MAX_NUMBER; num++)
+    // cout << num << "\t\t" << (num * num) << endl;
     
     return 0;
 } 
