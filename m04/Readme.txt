@@ -36,16 +36,16 @@ Loops can be described by different but interchangible syntax:
     } while( test_statement1 );
 
 Racing problem between stream devices and CPU. 
-    demonstrated in lab5_9.cpp
+    demonstrated in lab5_1.cpp
     
-Proper range expression:
+Proper range expression: (deMOrgan Theorem)
     int i, x, y; // x is less than y
 
     // within x, y
     if( x<=i && i <=y )
     
     // inside of x, y
-    if( x<=i && i <=y )
+    if( x<i && i<y )
     
     // outside of x, y
     if( i<x || y <i )
@@ -63,5 +63,11 @@ Implcit and Explicit conversion for different data types
 Loop Break & Loop Continue
 
 Nested Loops
+    example: 
+        calculate all temperature in all spots of a container
+    for(int x=0; x<100; x++) // 1ST level x is modified 100
+        for(int y=0; y<50; y++) // 2ND level
+            for(int z=0; z<50; z++) // 3RD level
+                calculate_temp(x,y,z,a,b,c);
 
 Accessing text file
