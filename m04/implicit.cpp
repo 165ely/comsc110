@@ -10,4 +10,5 @@ int main() {
     cout << s+c << endl
          << i+c << endl
          << i+f << endl;
+    cout << char(c+1) << endl;
 }

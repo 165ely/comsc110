@@ -13,8 +13,8 @@ int main() {
     
     inputFile.open(filename);
     if (inputFile) { // If open successfully, process it.
-        // while (inputFile >> line) 
-        while (getline(inputFile, line))
+        while (inputFile >> line) 
+        // while (getline(inputFile, line))
             cout << line << endl;
         inputFile.close();
     }

@@ -10,7 +10,6 @@ int main() {
     
     // outer loop: control the sorted/unsorted region
     for(int i=0; i<arr.size(); i++) {
-    
         // inner loop: find and move the smallest in unsorted
         int temp, smallest = i;
         for(int j=i; j<arr.size(); j++) {
